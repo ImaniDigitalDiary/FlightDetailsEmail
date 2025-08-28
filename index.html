@@ -1,138 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Flight Details Email</title>
+    <style>
+        /* MOBILE STYLES */
+        @media screen and (max-width: 620px) {
+            .container {
+                width: 100% !important;
+            }
+
+            img.responsive-img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .stack-column img {
+                margin: 0 auto !important;
+            }
+
+            .content-padding {
+                padding: 15px !important;
+            }
+        }
+    </style>
 </head>
-<body>
+
+<body style="margin:0; padding:0; background-color:#5a6cf4; font-family: Arial, sans-serif;">
     <!-- WRAPPER -->
-     <table width='100%' border='0' cellspacing='0' cellpadding='0' bgcolor='#5a6cf4'>
-        <tr align='center' class='main-wrap-tr'>
-            <td>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#5a6cf4">
+        <tr>
+            <td align="center">
                 <!-- MAIN CONTAINER -->
-                 <table class='container' width='600px' border='0' cellspacing='0' cellpadding='0' bgcolor='#fff'
-                    style='margin:20px auto; border-radius: 8px; overflow: hidden; font-family: Arial, sans-serif;'>
-                    
-                    <!-- HEADER - 2 COLS-->
-                     <tr>
-                        <td>    
-                            <img src="./images/take-flight-logo-1.png" alt="Take Flight Logo" width='70px' 
-                                style='margin: 10px; border-radius: 5px; box-shadow: 2px -2px rgba(11, 21, 96, 0.7);'>
+                <table class="container" width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff"
+                    style="margin:20px auto; border-radius:8px; overflow:hidden;">
+
+                    <!-- HEADER -->
+                    <tr>
+                        <td class="stack-column" style="padding:10px;" align="left">
+                            <img src="./images/take-flight-logo-1.png" alt="Take Flight Logo" width="70"
+                                style="border-radius:5px; box-shadow:2px -2px rgba(11,21,96,0.7); display:block;">
                         </td>
-                        <td align='right' class='header-text' colspan='2'
-                            style='padding-right: 10px;'>
-                                <p>
-                                Jane Doe
-                                <br>Member Nr. <span style='color:#0b1560; font-weight: 700;'>012345678</span> | Level <span style='color:#0b1560; font-weight: 700;'>Basic</span>
-                                <br>Points <span style='color:#0b1560; font-weight: 700;'>2000</span></p>
+                        <td class="stack-column" align="right" style="padding:10px; font-size:14px; line-height:1.4;">
+                            Jane Doe<br>
+                            Member Nr. <span style="color:#0b1560; font-weight:700;">012345678</span> | Level <span
+                                style="color:#0b1560; font-weight:700;">Basic</span><br>
+                            Points <span style="color:#0b1560; font-weight:700;">2000</span>
                         </td>
-                     </tr>
+                    </tr>
 
-                     <!-- HERO / BANNER IMAGE -->
-                      <tr>
-                        <td align='center' colspan='3'>
-                            <img src="images/hero-image.jpg" alt="Hero - Banner Image" width='600'
-                                style='display: block; width:100%; max-width: 600px;'>
+                    <!-- HERO IMAGE -->
+                    <tr>
+                        <td colspan="2">
+                            <img src="images/hero-image.jpg" alt="Hero Banner" width="600" class="responsive-img"
+                                style="display:block; width:100%; max-width:600px; height:auto;">
                         </td>
-                      </tr>
+                    </tr>
 
-                      <!-- BODY CONTENT #1 -->
-                       <tr class='body-content'>
-                            <td class='content-1-td' align='center' colspan='3'
-                                style='line-height: 1.5; letter-spacing: 1px;'
-                            >
-                                <h1>HI JANE</h1>
-                                <p
-                                    style='width: 380px;'
-                                >Your trip to <span style='color:#0b1560; font-weight: 700;'>Maldives</span> 
-                                    starts on <span style='color:#0b1560; font-weight: 700;'>10.03.2026</span>. 
-                                    Make your trip easier by using our App to checkin online. No app? No problem!
-                                    Click <span style='color:#0b1560; font-weight: 700;'>here</span> for check in. 
-                                </p>
-                                <!-- BUTTON (CONTENT #1)-->
-                                <table border='0' cellspacing='0' cellpadding='0' align='center' style='margin-bottom: 30px;'>
-                                    <tr align='center'>
-                                        <td bgcolor='#0b1560' style='border-radius: 4px;' colspan='3'>
-                                            <a href="#" target='_blank' style='display: inline-block; padding: 12px 30px; font-size: 16px; color: #fff;
-                                                                            font-weight: bold; border-radius: 4px; text-decoration: none;'
-                                                class='button'>
-                                                CHANGE CHECK-IN
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            
+                    <!-- BODY CONTENT -->
+                    <tr>
+                        <td colspan="2" align="center" class="content-padding"
+                            style="padding:20px; line-height:1.5; letter-spacing:1px;">
+                            <h1 style="margin:0;">HI JANE</h1>
+                            <p style="max-width:380px; margin:10px auto; font-size:14px; color:#333;">
+                                Your trip to <span style="color:#0b1560; font-weight:700;">Maldives</span> starts on
+                                <span style="color:#0b1560; font-weight:700;">10.03.2026</span>.
+                                Make your trip easier by using our App to check-in online. No app? No problem!
+                                Click <a href="#" style="color:#0b1560; font-weight:700; text-decoration:none;">here</a>
+                                for check in.
+                            </p>
 
-                            <!-- BODY CONTENT #2 -->
-                             <tr align='center' bgcolor='#ebedff' style='text-align: center;'>
-                                <td class='content-2' colspan='3'>
-                                    <h1>YOUR TRIP</h1>
-                                    <p>Your flight from <span style='color: #0b1560; font-weight: 600;'>ABCD08</span> to 
-                                        <span style='color: #0b1560; font-weight: 600;'>EFG09</span> departs from 
-                                        Cleveland at <span style='color: #0b1560; font-weight: 600;'>3:00PM</span></p>
-                                </td>
-                             </tr>
+                            <!-- BUTTON -->
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:20px 0;">
+                                <tr>
+                                    <td bgcolor="#0b1560" style="border-radius:4px;">
+                                        <a href="#" target="_blank"
+                                            style="display:inline-block; padding:12px 30px; font-size:16px; color:#ffffff; font-weight:bold; border-radius:4px; text-decoration:none;">
+                                            CHANGE CHECK-IN
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
 
-                             <tr class="content2" bgcolor='#ebedff'>
-                                <td style='text-align: center;'>
-                                    <ul style='list-style-type: none; line-height: 20px; font-weight: 600;'>
-                                        <li style='font-weight: 600; color: #aeaeae; margin-bottom: 10px;'>From</li>
-                                        <li>3:00PM</li>
-                                        <li>10.03.26</li>
-                                        <li>Cleveland</li>
-                                    </ul>
-                                </td>
-                                <td align='center' width='200'> 
-                                    <img src="/images/airplane.png" alt="Image of airplane" width='100'>
-                                </td>
-                                <td style='text-align: center;'>
-                                    <ul style=' list-style-type: none; line-height: 20px; font-weight: 600;'>
-                                        <li style='color: #aeaeae; margin-bottom: 10px;'>To</li>
-                                        <li>3:00AM</li>
-                                        <li>10.04.26</li>
-                                        <li>Maldives</li>
-                                    </ul>
-                                </td>
-                             </tr>
-                             <tr bgcolor='#ebedff' style='color: #706f6f;'>
-                                <td colspan='3' align='center' style='padding-bottom: 30px;'>
-                                    <p>Flight Duration: 12h 0min</p>
-                                    <p>Travel Category: Economy</p>
-                                </td>
-                             </tr>
-                       </tr>
+                    <!-- TRIP INFO -->
+                    <tr bgcolor="#ebedff">
+                        <td colspan="2" align="center" style="padding:20px;">
+                            <h1 style="margin:0;">YOUR TRIP</h1>
+                            <p style="margin:10px 0; font-size:14px; color:#333;">
+                                Your flight from <span style="color:#0b1560; font-weight:600;">ABCD08</span> to
+                                <span style="color:#0b1560; font-weight:600;">EFG09</span> departs from Cleveland at
+                                <span style="color:#0b1560; font-weight:600;">3:00PM</span>
+                            </p>
+                        </td>
+                    </tr>
 
-                       <!-- FOOTER -->
-                        <tr>
-                            <tr>
-                                <td colspan='3' bgcolor='#0b1560' style='padding-left: 20px;'>
-                                    <h3 style='color: #fff;'>Info</h3>
-                                    <p style='color: #fff;'>Stay up-to-date with current activities and future events by following 
-                                        us on your favorite social media channels.
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td bgcolor='#0b1560' colspan='3' style='padding-left: 20px; padding-bottom: 30px;'>
-                                    <h3 style='color: #fff;'>Contact Us</h3>
-                                    <p style='color: #fff; font-size: 16px;'>
-                                        www.takeflight.com <br>
-                                        123 Sunny Rd. <br>
-                                        +1 230 448 9803
-                                    </p>
-                                    <a style='color: #fff; text-decoration: underline;'>Unsubscribe</a>
-                                </td>
-                            </tr>
-                            
-                        </tr>
-                            
+                    <tr bgcolor="#ebedff">
+                        <td class="stack-column" align="center" style="padding:15px;">
+                            <ul style="padding:0; margin:0; list-style:none; font-weight:600; line-height:20px;">
+                                <li style="color:#aeaeae; margin-bottom:10px;">From</li>
+                                <li>3:00PM</li>
+                                <li>10.03.26</li>
+                                <li>Cleveland</li>
+                            </ul>
+                        </td>
+                        <td class="stack-column" align="center" style="padding:15px;">
+                            <img src="/images/airplane.png" alt="Airplane" width="100" style="display:block;">
+                            <ul
+                                style="padding:0; margin:15px 0 0 0; list-style:none; font-weight:600; line-height:20px;">
+                                <li style="color:#aeaeae; margin-bottom:10px;">To</li>
+                                <li>3:00AM</li>
+                                <li>10.04.26</li>
+                                <li>Maldives</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr bgcolor="#ebedff">
+                        <td colspan="2" align="center" style="padding:20px; color:#706f6f; font-size:14px;">
+                            <p style="margin:0;">Flight Duration: 12h 0min</p>
+                            <p style="margin:0;">Travel Category: Economy</p>
+                        </td>
+                    </tr>
 
-                 </table>
+                    <!-- FOOTER -->
+                    <tr>
+                        <td colspan="2" bgcolor="#0b1560" style="padding:20px; color:#ffffff;">
+                            <h3 style="margin:0; color:#ffffff;">Info</h3>
+                            <p style="margin:10px 0; font-size:14px;">
+                                Stay up-to-date with current activities and future events by following us on your
+                                favorite social media channels.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" bgcolor="#0b1560" style="padding:20px; color:#ffffff;">
+                            <h3 style="margin:0; color:#ffffff;">Contact Us</h3>
+                            <p style="margin:10px 0; font-size:14px;">
+                                www.takeflight.com <br>
+                                123 Sunny Rd. <br>
+                                +1 230 448 9803
+                            </p>
+                            <a href="#"
+                                style="color:#ffffff; text-decoration:underline; font-size:14px;">Unsubscribe</a>
+                        </td>
+                    </tr>
+
+                </table>
             </td>
         </tr>
-     </table>
+    </table>
 </body>
+
 </html>
